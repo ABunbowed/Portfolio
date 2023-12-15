@@ -1,5 +1,7 @@
 import React from "react";
-import Typed from "react-typed";
+import { TypeAnimation } from 'react-type-animation';
+
+
 
 
 const Hero = () => {
@@ -54,14 +56,24 @@ const Hero = () => {
          Abe-Jhay Cross
         </h1>
         <div className="flex justify-left ">
-          <p className="md:text-5xl  sm:text-4xl text-2xl ">I am a </p>
-          <Typed
-                    className="capitalize md:text-5xl  sm:text-4xl text-2xl pl-2 "
-                    strings={[' Web Developer', " Graduate", " Student"]}
-                    typeSpeed={40}
-                    backSpeed={50}
-                    loop
-                />
+
+          <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'I am a Web Devloper',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'I am a First Class Honors Graduate',
+        1000,
+        'I am a Student',
+        1000,
+      ]}
+      wrapper="div"
+      speed={50}
+      repeat={Infinity}
+      className="md:text-5xl  sm:text-4xl text-2xl "
+    />
+          
+         
           
         </div>
         
