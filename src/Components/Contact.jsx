@@ -17,7 +17,7 @@ const Contact = () => {
     {
       name: "CV",
       image: "pdf",
-      link: "",
+      link: "https://docs.google.com/document/d/e/2PACX-1vQyFKypSTDaJ6qq5RxGe6t7J-1RynnDPtRIwNw0U8ntuuPMXY3m-BQBaO0UB9WbGt1VU0Zue3s5HF_4/pub",
     }
 
   ]
