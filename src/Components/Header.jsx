@@ -24,7 +24,7 @@ function Header() {
                 <li><span class="text-[#1686CD] pl-1 text-base px-1">04.</span>Contact</li>  
                 </ul>
                 <div onClick={handleNav} className='block md:hidden z-50 '>
-                {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20}/>}
+                {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20}/>}
                     
                 </div> 
                 <div class={nav ? 'fixed right-0 top-0 w-[40%] h-full bg-[#0a192f] ease-in-out duration-500 text-center  ': 'fixed right-[-100%] lg:hidden ease-in-out duration-500'} >

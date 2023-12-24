@@ -82,7 +82,7 @@ const Hero = () => {
       <h1 className="text-transform:capitalize md:text-3xl  sm:text-2xl text-l text-[#ccd6f6] pb-5">
       Tech Stack
       </h1>
-      <div className="flex flex-row justify-between">
+      <div className=" grid grid-cols-4 gap-6">
 
       {techStack.map((tech, index) => (
         <img

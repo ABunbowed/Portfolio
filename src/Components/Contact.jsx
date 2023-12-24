@@ -30,7 +30,7 @@ const Contact = () => {
         <h1 className="pl-2 font-bold text-2xl border-b border-[#1686CD] mb-10">
           <span className="text-[rgb(22,134,205)]">04.</span> Contact
         </h1>
-        <div className='flex flex-row justify-center'>
+        <div className='grid grid-cols-3 gap-4'>
 
         {contacts.map((contact, index)=> (
           <a
@@ -40,7 +40,7 @@ const Contact = () => {
           <img
           src={require ("../../src/Assets/" + contact.image + '.png')}
           alt={contact.title}
-          className='max-w-[70px] m-10'
+          className='max-w-[70px]'
           ></img>
           </a>
         ))}
